@@ -3,37 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Recipe App :)</title>
 </head>
 <body>
   <div class="container">
-    <header>
-      <img class="logo" src="/images/logo.png" alt="logo" height="100">
-      <form class="search">
+    <header class="header">
+      <img class="logo" src="/images/test2.png" alt="logo" height="100">
+      <form class="search-form">
         <input class="input" placeholder="Look for your recipe :)">
-        <button class="button_search">teste</button>
-        
+        <button class="button-search">Search</button> 
       </form>
       <nav class="nav">
-        <ul class="nav-button">
-          <li class="nav-item"><button class="nav-button add"><span>Add recipe</span></button></li>
-          <li clas="nav-item"><button class="nav-button bookmark"><span>Bookmark</span></button></li>
+        <ul class="nav-list">
+          <li><button class="nav-button add"><span>Add recipe</span></button></li>
+          <li><button class="nav-button bookmark"><span>Bookmark</span></button></li>
         </ul>
       </nav>
     </header>
-    <h1>Hello, Recipesss</h1>
-  <!-- Unordered list -->
-    <ul>
-      <li><a href="recipes/bananabread.html">Banana Bread Fit</a></li>
-      <li><a href="recipes/brigadeiro.html">Brigadeiro</a></li>
-      <li><a href="recipes/paobatata.html">Pão de batata</a></li>
-    </ul>
-  <!-- Ordered list -->
-    <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
+
+    <div class="main-content">
+    <div class="recipes-list">
+      <h1>Hello, Recipesss</h1>
+      <ul>
+        <li><a href="recipes/bananabread.html">Banana Bread Fit</a></li>
+        <li><a href="recipes/brigadeiro.html">Brigadeiro</a></li>
+        <li><a href="recipes/paobatata.html">Pão de batata</a></li>
+      </ul>
+    </div>
+    
+    <div class="recipe-display">
+      <div class="recipe-placeholder">
+        <h2>Select a recipe to view it here</h2>
+        <p>Click on any recipe from the list to see its details</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>

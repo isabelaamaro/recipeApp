@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f5f3; /* Light page background */
+}
+
+/* MAIN CONTAINER - THE "BOOK" */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* HEADER STYLES */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef8f3;
+  height: 100px;
+  padding: 0 40px; /* More padding for spacious feel */
+  border-bottom: 1px solid #eee; /* Subtle separation line */
+}
+
+.logo {
+  height: 80px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.button-search {
+  padding: 12px 24px;
+  /* background-color: rgb(31, 64, 182); */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-search:hover {
+  background-color: #6b99c8;
+  border-left: 4px solid rgb(31, 64, 182);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: rgb(224, 229, 248);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* MAIN CONTENT LAYOUT */
+.main-content {
+  display: flex;
+  min-height: calc(100vh - 100px); /* Full height minus header */
+}
+
+/* RECIPE LIST COLUMN */
+.recipes-list {
+  width: 35%; /* Slightly wider for recipe list */
+  padding: 40px;
+  background-color: #f8f9fa; /* Very light gray */
+  border-right: 1px solid #eee; /* Separation line */
+}
+
+.recipes-list h1 {
+  margin-bottom: 30px;
+  color: rgb(31, 64, 182);
+  font-size: 28px;
+}
+
+.recipes-list ul {
+  list-style: none;
+}
+
+.recipes-list li {
+  margin-bottom: 15px;
+}
+
+.recipes-list a {
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.recipes-list a:hover {
+  background-color: #e9ecef;
+  border-left: 4px solid rgb(31, 64, 182);
+}
+
+/* RECIPE DISPLAY COLUMN */
+.recipe-display {
+  width: 65%; /* Remaining space */
+  padding: 40px;
+}
+
+.recipe-placeholder {
+  text-align: center;
+  color: #666;
+  margin-top: 100px;
+}
+
+.recipe-placeholder h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
