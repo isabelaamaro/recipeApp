@@ -1,3 +1,5 @@
+/* color palette > https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28 */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f5f3; /* Light page background */
+  background-color: #FFFCF2; /* Light page background */
 }
 
 /* MAIN CONTAINER - THE "BOOK" */
@@ -26,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fef8f3;
+  background-color: #CCC5B9;
   height: 100px;
   padding: 0 40px; /* More padding for spacious feel */
   border-bottom: 1px solid #eee; /* Subtle separation line */
@@ -38,11 +40,14 @@ body {
 
 .search-form {
   display: flex;
+  position: relative;
   gap: 10px;
+  align-items: center; 
 }
 
 .input {
-  padding: 12px 16px;
+  display: flex;
+  padding: 12px 50px 12px 16px;
   border: 1px solid #ddd;
   border-radius: 50px;
   width: 300px;
@@ -50,9 +55,11 @@ body {
 }
 
 .button-search {
+  position: absolute;
+  right: 0;
   padding: 12px 24px;
-  /* background-color: rgb(31, 64, 182); */
-  color: white;
+  background-color: #403D39;
+  color: #FFFCF2;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -60,24 +67,40 @@ body {
 }
 
 .button-search:hover {
-  background-color: #6b99c8;
-  border-left: 4px solid rgb(31, 64, 182);
+  background-color: #403D39;
+  transform: scale(1.05); 
 }
 
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 15px;
+  height: 100%;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  height: 100%; /* Each list item fills header height */
 }
 
 .nav-button {
-  padding: 10px 20px;
-  background-color: rgb(224, 229, 248);
-  color: white;
+  padding: 0px 25px;
+  background: none;
+  color: #252422;
   border: none;
-  border-radius: 50px;
   cursor: pointer;
   font-size: 14px;
+  height: 100%; /* Make button fill nav height */
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  /* transition: background-color 0.3s ease; */
+}
+
+.nav-button:hover{
+  background-color: #FFFCF2;
+  
 }
 
 /* MAIN CONTENT LAYOUT */
@@ -96,7 +119,7 @@ body {
 
 .recipes-list h1 {
   margin-bottom: 30px;
-  color: rgb(31, 64, 182);
+  color: #EB5E28;
   font-size: 28px;
 }
 
@@ -110,7 +133,7 @@ body {
 
 .recipes-list a {
   text-decoration: none;
-  color: #333;
+  color: #252422;
   padding: 15px;
   display: block;
   border-radius: 8px;
@@ -119,8 +142,10 @@ body {
 }
 
 .recipes-list a:hover {
-  background-color: #e9ecef;
-  border-left: 4px solid rgb(31, 64, 182);
+  background-color: #CCC5B9;
+  border-left: 2px solid #EB5E28;
+  border-right: 2px solid #EB5E28;
+  border-radius: 50px;
 }
 
 /* RECIPE DISPLAY COLUMN */
@@ -131,11 +156,11 @@ body {
 
 .recipe-placeholder {
   text-align: center;
-  color: #666;
-  margin-top: 100px;
+  color: #252422;
+  /* margin-top: 100px; */
 }
 
 .recipe-placeholder h2 {
   margin-bottom: 15px;
-  color: #333;
+  color: #EB5E28;
 }
